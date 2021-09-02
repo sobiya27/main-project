@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>train</servlet-name>
+    <servlet-class>com.TrainController.TrainController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>train</servlet-name>
+    <url-pattern>/train_res</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>edit</servlet-name>
+   <servlet-class>com.TrainController.traineditcontroller</servlet-class>
+</servlet>
+
+<servlet-mapping>
+      <servlet-name>edit</servlet-name>
+        <url-pattern>/edit_value</url-pattern> 
+</servlet-mapping>
+
+
+  <servlet>
+   <servlet-name>delete</servlet-name>
+   <servlet-class>com.TrainController.deletecontroller</servlet-class>
+</servlet> 
+<servlet-mapping>
+      <servlet-name>delete</servlet-name>
+        <url-pattern>/delete_value</url-pattern> 
+</servlet-mapping> 
+  </web-app>
+  
